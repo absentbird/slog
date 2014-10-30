@@ -12,18 +12,30 @@ const (
     PATH = "slog.csv"
     LAYOUT = "2006 01/02 15:04"
 )
- 
+
+type record struct {
+    message string
+    time time.Time
+}
+
+func (r record) Line() []string {
+    line := []string{}
+    line = append(line, r.time.Format(LAYOUT))
+    line = append(line, r.message)
+    return line
+}
+
 func recordLog(log string) {
-    record := []string{}
-    record = append(record, time.Now().Format(LAYOUT))
-    record = append(record, log)
+    r := new(record)
+    r.time = time.Now()
+    r.message = log
     f, err := os.OpenFile(PATH, os.O_RDWR|os.O_APPEND|os.O_CREATE, 0664)
     if err != nil {
         panic(err)
     }
     defer f.Close()
     w := csv.NewWriter(f)
-    w.Write(record)
+    w.Write(r.Line())
     w.Flush()
 }
  
