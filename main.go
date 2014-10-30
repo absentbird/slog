@@ -29,7 +29,7 @@ func recordLog(log string) {
     r := new(record)
     r.time = time.Now()
     r.message = log
-    f, err := os.OpenFile(PATH, os.O_RDWR|os.O_APPEND|os.O_CREATE, 0664)
+    f, err := os.OpenFile(PATH, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0664)
     if err != nil {
         panic(err)
     }
