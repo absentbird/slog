@@ -9,7 +9,7 @@ import (
 )
  
 const (
-    PATH = "slog.csv"
+    PATH = "slog.log"
     LAYOUT = "2006 01/02 15:04"
 )
 
