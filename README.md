@@ -15,4 +15,4 @@ Slog can take input in 3 different ways.
 
 Slog can be used to keep track of time spent on a project or to keep track of when your co-workers use the bathroom. The uses are endless! Any one-line event or memo that you want to attach to a timestamp is a contender.
 
-If you can't think of a good use for it just call it minimalist micro-journaling. Remember to bring it up casually next time you get coffee so people can hear how trendy and cool you are.
+If you can't think of a practical use for Slog just call it *minimalist micro-journaling*. Remember to bring it up casually next time you get coffee so people can hear how trendy and cool you are.
