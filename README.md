@@ -3,7 +3,7 @@ Slog
 
 ###A simple logging application.
 
-Slog takes a string and appends it with a timestamp to a CSV named slog.csv stored in the working directory. If slog.csv doesn't exist it will be created.
+Slog takes a string and appends it with a timestamp to a CSV named slog.log stored in the working directory. If slog.log doesn't exist it will be created.
 
 Slog can take input in 3 different ways.
 
