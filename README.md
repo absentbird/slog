@@ -1,7 +1,7 @@
 Slog
 ====
 
-###The simple logging application.
+###A simple logging application.
 
 Slog takes a string and appends it with a timestamp to a CSV named slog.csv stored in the working directory. If slog.csv doesn't exist it will be created.
 
