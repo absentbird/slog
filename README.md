@@ -9,4 +9,4 @@ Slog can take input in 3 different ways.
 
 1. As an argument: `slog "I'm not talking to you"`
 2. From a pipe: `echo "hand-blown glass" | slog`
-3. Or it will ask you to enter the record: `Input record: record`
+3. Or you will be asked to enter a record: `Input record: record`
